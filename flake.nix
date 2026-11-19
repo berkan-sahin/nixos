@@ -20,11 +20,16 @@
 				./hosts/navi/hardware-configuration.nix
 				./hosts/navi/battery-limit.nix
 
+				# services
+				./srv/tailscale.nix
+
 				# fonts
 				./misc/nerd-fonts.nix
 
-				# web browser
-				./software/zen-browser.nix
+				# software
+				./software/zen-browser.nix # browser
+				./software/editors.nix # VSCode, emacs, nvim etc.
+				./software/productivity.nix # email, slack, zoom etc.
 			];
 		};
 		usagi = nixpkgs.lib.nixosSystem { # """homeserver"""

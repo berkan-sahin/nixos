@@ -91,8 +91,6 @@
     ];
   };
 
-  #tailscale
-  services.tailscale.enable = true;
 
   services.syncthing = {
   enable = true;
