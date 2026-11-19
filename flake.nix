@@ -13,6 +13,10 @@
 				# host-specific
 				./hosts/navi/configuration.nix
 				./hosts/navi/hardware-configuration.nix
+				./hosts/navi/battery-limit.nix
+
+				# fonts
+				./misc/nerd-fonts.nix
 			];
 		};
 		usagi = nixpkgs.lib.nixosSystem { # """homeserver"""
