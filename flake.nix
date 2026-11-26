@@ -19,6 +19,11 @@
 				./hosts/navi/configuration.nix
 				./hosts/navi/hardware-configuration.nix
 				./hosts/navi/battery-limit.nix
+				./hosts/navi/bluetooth.nix
+				./hosts/navi/howdy.nix
+
+				# users
+				./users/bsahin.nix
 
 				# services
 				./srv/tailscale.nix
@@ -30,6 +35,7 @@
 				./software/zen-browser.nix # browser
 				./software/editors.nix # VSCode, emacs, nvim etc.
 				./software/productivity.nix # email, slack, zoom etc.
+				./software/slop.nix # ai slop
 			];
 		};
 		usagi = nixpkgs.lib.nixosSystem { # """homeserver"""
